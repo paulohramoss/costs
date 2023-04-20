@@ -53,7 +53,7 @@ function Project() {
                         </div>
                     ) : (    
                         <div className={styles.project_info}>
-                            <p>formulário</p>
+                            <p>formulários</p>
                         </div>
                     )}
                 </div>
