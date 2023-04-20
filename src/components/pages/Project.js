@@ -13,12 +13,11 @@ function Project() {
     const {id} = useParams()
     
     const [project, setProject] = useState([])
-    const [services, setServices] = useState([])
+    const [services,setServices] = useState([])
     const [showProjectForm, setShowProjectForm] = useState(false)
     const [message, setMessage] = useState()
     const [type, setType] = useState()
     const [showServiceForm, setShowServiceForm] = useState(false)
-    const [showRegisteredServices, setRegisteredServices] = useState(false)
 
     useEffect(() => {
         setTimeout(() => {
@@ -86,10 +85,6 @@ function Project() {
         setType('success')
     })
 }
-    function toggleRegisteredServices() {
-        setRegisteredServices(!showRegisteredServices)
-    }
-
     function toggleProjectForm() {
         setShowProjectForm(!showProjectForm)
     }
@@ -152,9 +147,6 @@ function Project() {
                             <p>
                                 <span>Total Utilizado:</span> R${project.cost}
                             </p>
-                            <p>
-                                <span>Orçamento restante:</span> R${project.cost}
-                            </p>
                         </div>
                     ) : (    
                         <div className={styles.project_info}>
@@ -183,9 +175,6 @@ function Project() {
                 </div>
                 <div className={styles.service_form_container}>
                 <h2>Serviços</h2>
-                            <button className={styles.btn} onClick={toggleRegisteredServices}>
-                                {!showServiceForm ? 'Mostrar serviços cadastrados' : 'Fechar'}
-                            </button>
                 <Container customClass="start">
                     {services.length > 0 &&
                     services.map((service) => (

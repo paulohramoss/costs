@@ -8,7 +8,17 @@ import { useState, useEffect } from 'react'
 import Loading from './layout/Loading'
 
 function Projects() {
-    const [projects, setProjects] = useState([])
+    const [projects, setProjects] = useState([{
+        name: "",
+        budget: "",
+        category: {
+          id: "",
+          name: ""
+        },
+        cost: 0,
+        services: [],
+        id: 1
+      },])
     const [removeLoading, setRemoveLoading] = useState(false)
     const [projectMessage, setProjectMessage] = useState('')
 
