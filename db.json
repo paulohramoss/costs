@@ -1,19 +1,19 @@
 {
   "projects": [
     {
-      "name": "teste",
-      "budget": "3434",
+      "name": "Primeiro Projeto",
+      "budget": "950",
       "category": {
-        "id": "1",
-        "name": "Infra"
+        "id": "2",
+        "name": "Desenvolvimento"
       },
       "cost": 0,
       "services": [],
       "id": 1
     },
     {
-      "name": "Projeto Paulo",
-      "budget": "10000",
+      "name": "Segundo Projeto",
+      "budget": "1000",
       "category": {
         "id": "4",
         "name": "Planejamento"
